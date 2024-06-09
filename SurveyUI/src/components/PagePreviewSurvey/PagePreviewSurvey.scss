@@ -1,0 +1,106 @@
+.question-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.preview-container {
+  margin: 0 5%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  @media (max-width: 1025px) {
+    margin: 0 5%;
+    width: 90%;
+  }
+  &_title-survey {
+    &_block {
+      padding-left: 10px;
+      font-weight: 500;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      &_title {
+        font-size: x-large;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      &_description {
+        margin-bottom: 5px;
+      }
+    }
+    &_header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10px;
+    }
+    &_description {
+      font-weight: 800;
+    }
+  }
+  &_page {
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    &_block {
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10px;
+      &_title {
+        font-size: large;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    &_question {
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      &_item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    &_under-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.answer-table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  &_json {
+    text-align: start;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  &_element {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.1);
+    &_item {
+      min-width: 35%;
+      max-width: 35%;
+    }
+  }
+  &_element:nth-child(2n) {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.tr {
+  background: rgba(0, 0, 0, 0.1);
+}
+.tbody tr:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.05);
+}

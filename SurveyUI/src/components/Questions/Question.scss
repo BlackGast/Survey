@@ -1,0 +1,100 @@
+.question-label {
+  padding-bottom: 10px;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  &_title {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    text-align: start;
+    &_name {
+      font-size: 15px;
+      background-color: "#f5f5f5";
+      font-weight: 400;
+    }
+  }
+  &_type {
+    font-size: 12px;
+    width: 40%;
+    text-align: end;
+    color: #8f8f8f;
+  }
+}
+
+.question-textfield {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.survey-title {
+  background: #f5f5f5;
+}
+.question {
+  &_number-items {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    &_item {
+      background-color: #ebebeb;
+      border-radius: 20px;
+      padding: 10px 15px 10px 15px;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
+    }
+    &_item-preview {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0 19px;
+      margin: 0 5px 5px 0;
+      outline: none;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      height: 46px;
+      line-height: 46px;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #444;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+      cursor: pointer;
+      user-select: none;
+      appearance: none;
+      touch-action: manipulation;
+      vertical-align: top;
+      transition: box-shadow 0.2s;
+    }
+    &_item-preview:focus-visible {
+      border: 1px solid #4c51f9;
+      outline: none;
+    }
+    &_item-preview:hover {
+      transition: all 0.2s;
+      box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+    }
+    &_item-preview:active {
+      background-color: #808080;
+    }
+    &_item-preview:disabled {
+      background-color: #eee;
+      border-color: #eee;
+      color: #444;
+      cursor: not-allowed;
+    }
+  }
+}
+.selected {
+  background-color: #91ccff;
+}
+
+hr {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.active-item {
+  border-left: solid 4px #0078d4;
+  margin-right: 9px;
+}

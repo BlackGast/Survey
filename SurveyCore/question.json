@@ -1,0 +1,148 @@
+{
+  "model": {
+    "title": "Мой опрос",
+    "description": "Описание опроса",
+    "questions": [
+      {
+        "id": 1,
+        "type": "single_choice",
+        "question": "Ваш вопрос",
+        "options": ["Ответ1", "Ответ2", "Ответ3", "Ответ4"]
+      },
+      {
+        "id": 2,
+        "type": "multiple_choice",
+        "question": "Ваш вопрос",
+        "options": ["Ответ", "Ответ", "Ответ", "Ответ", "Ответ"]
+      },
+      {
+        "id": 3,
+        "type": "numeric_scale",
+        "question": "Ваш вопрос (от 1 до 10)",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "id": 4,
+        "type": "text_input",
+        "question": "Ответ",
+        "placeholder": "Введите свой ответ"
+      }
+    ]
+  }
+} 
+
+{
+  "title": "Title",
+  "description": "Description",
+  "pages": [
+    {
+      "id": 1,
+      "title": "TitlePages",
+      "description": "PagesDescription",
+      "panels": [
+        {
+          "id": 1,
+          "title": "TitlePanels",
+          "description": "PanelsDescription",
+          "columns": 1,
+          "questions": [
+            {
+              "id": 1,
+              "title": "QuestionText",
+              "type": "Text",
+              "placeholder": "enter"
+            },
+            {
+              "id": 2,
+              "title": "QuestionChoice",
+              "type": "Choice",
+              "choices": [
+                {
+                  "id": 1,
+                  "title": "Ch_1",
+                  "checked": false,
+                  "disabled": false
+                },
+                {
+                  "id": 2,
+                  "title": "Ch_2",
+                  "checked": false,
+                  "disabled": false
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "title": "QuestionDate",
+              "type": "Date"
+            },
+            {
+              "id": 4,
+              "title": "QuestionSelect",
+              "type": "Select",
+              "selects": [
+                {
+                  "id": 1,
+                  "title": "S_1",
+                  "checked": false,
+                  "selected": false
+                },
+                {
+                  "id": 2,
+                  "title": "S_2",
+                  "checked": false,
+                  "selected": false
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "title": "QuestionNumber",
+              "type": "Number"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "title": "Title",
+  "description": "Description",
+  "pages": [
+    {
+      "panels": [
+        {
+          "questions": [
+            {
+              "id": 1,
+              "title": "QuestionText",
+              "type": "Text"
+            },
+            {
+              "id": 2,
+              "title": "QuestionChoice",
+              "type": "Choice",
+              "choices": [
+                {
+                  "id": 1,
+                  "title": "Ch_1",
+                  "checked": false,
+                  "disabled": false
+                },
+                {
+                  "id": 2,
+                  "title": "Ch_2",
+                  "checked": false,
+                  "disabled": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
