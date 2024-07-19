@@ -4,7 +4,7 @@ import { QuestionBase } from "./QuestionBase";
 export class QuestionText extends QuestionBase {
     public asDescription: boolean;
     public isMultiline: boolean;
-    public placeholder: string;
+    // public placeholder: string;
 
     constructor(data: IQuestionData) {
         super(data);

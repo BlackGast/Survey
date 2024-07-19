@@ -3,7 +3,7 @@ import { Validator } from "../Validator/Validator";
 import { QuestionBase } from "./QuestionBase";
 
 export class QuestionNumber extends QuestionBase {
-    public placeholder: string;
+    // public placeholder: string;
     public isMultiline: boolean;
     public maxNum: number;
 

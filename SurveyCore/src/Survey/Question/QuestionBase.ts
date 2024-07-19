@@ -1,5 +1,7 @@
 import { IQuestionData } from "../../model/IQuestionData";
 import { QuestionType } from "../../model/QuestionType";
+import { IChoice } from "../../model/formElements/IChoice";
+import { ISelectAnswer } from "../../model/formElements/ISelectAnswer";
 import { Utils } from "../Utils";
 
 
@@ -23,7 +25,7 @@ export class QuestionBase implements IQuestionData {
     /**
      * Базовый метод для редактирования чойза в списке ответов. Предназначено для типов вопросов Choice и Select.
      */
-    public deleteChoice(itemId: number) { /* TODO document why this method 'setChoise' is empty */ }
+    public deleteChoice(itemId?: number) { /* TODO document why this method 'setChoise' is empty */ }
 
     /**
      * Базовый метод для добавления чойза в список ответов. Предназначено для типов вопросов Choice и Select.
@@ -33,12 +35,12 @@ export class QuestionBase implements IQuestionData {
     /**
      * Базовый метод для получения значения ответа.
      */
-    public getValue?()
+    public getValue?(): any;
 
     /**
      * Базовый метод для изменения значения ответа.
      */
-    public setValue(newValue: any) { /* TODO document why this method 'setValue' is empty */ }
+    public setValue(newValue?: any) { /* TODO document why this method 'setValue' is empty */ }
 
     /**
      * Базовый метод для изменения одного из полей класса по названию.
@@ -54,7 +56,7 @@ export class QuestionBase implements IQuestionData {
         return this[name as keyof this];
     }
 
-    public setFieldByName(fieldName: string, newValue: any, index: number) { /* TODO document why this method 'setFieldByName' is empty */ }
+    public setFieldByName(fieldName?: string, newValue?: IChoice | ISelectAnswer, index?: number) { /* TODO document why this method 'setFieldByName' is empty */ }
 
     /**
      * Колбэк, который будет вызывать метод из контекста, в котором выполняется Survey.
